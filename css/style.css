@@ -1,3 +1,4 @@
+
 @import url(https://fonts.googleapis.com/css?family=Roboto);
 body{
 	font-family: 'Roboto', sans-serif;
@@ -5,4 +6,14 @@ body{
     font-family: sans-serif;
     font-style: 14px;
     color: #efefef;
+}
+html {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+*, *:before, *:after {
+	-webkit-box-sizing: inherit;
+	-moz-box-sizing: inherit;
+	box-sizing: inherit;
 }
