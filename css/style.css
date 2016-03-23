@@ -17,3 +17,11 @@ html {
 	-moz-box-sizing: inherit;
 	box-sizing: inherit;
 }
+
+img {
+	max-width: 100%;
+}
+
+.emp {
+	width: 30%;
+}
