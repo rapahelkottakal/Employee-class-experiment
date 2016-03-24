@@ -7,7 +7,17 @@
         <title>Employee Classes</title>
         <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
         <link rel="stylesheet" href="css/style.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+        <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+        
+        <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+
+        <script>
+            $(function() {
+                $( "#datepicker" ).datepicker();
+            });
+        </script>
     </head>
     <body>
         <div class="container-fluid">
@@ -18,5 +28,44 @@
         <script src="js/Classes/Emp.js"></script>
         <script src="js/Classes/Publisher.js"></script>
         <script src="js/app.js"></script>
+
+
+
+        <form action="sucess.html">
+            <h2>Employee Details</h2>
+          <fieldset class="form-group">
+            <label for="exampleInputPassword1" id='id' value='id'>ID:</label>
+            <input type="text" class="form-control" id="empid" placeholder="Your ID">
+        </fieldset>
+
+        <fieldset class="form-group">
+            <label for="exampleInputPassword1" vale='name'>Name:</label>
+            <input type="text" class="form-control" id="name" placeholder="Your Name">
+        </fieldset>
+
+        <fieldset class="form-group">
+            <label for="exampleSelect1" value='dep'>Department</label>
+            <select class="form-control dep" id="exampleSelect1">
+              <option>Publisher</option>
+              <option>Designear</option>
+              <option>Writers</option>
+              <option>Stylists</option>
+            </select>
+        </fieldset>
+
+        <p><b>Date:</b> <input type="text" class="form-control date" id="datepicker"></p>
+
+        <button type="button" class="btn btn-success">Submit</button>
+        </form>
     </body>
+    <script type="text/javascript">
+    $('.btn').click(function(){
+        var empId = $('#empid').val();
+        var name = $('#name').val();
+        var dep = $('.dep').val();
+        var date = $('.date').val();
+        console.log([empId, name, dep, date]);
+    });
+
+    </script>
 </html>
