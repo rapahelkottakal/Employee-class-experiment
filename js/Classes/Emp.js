@@ -19,10 +19,7 @@ class Emp {
 
 			$overlay = $('<div/>', { class: 'overlay' });
 
-		this.overlay = $overlay.click(()=> {
-			this.openOverlay();
-
-		});
+		this.overlay = $overlay;
 
 		$customBtn.click(() => {
 			this.closeOverlay();
