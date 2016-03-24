@@ -39,7 +39,7 @@ form{
 	background-color: tomato;
 	font-weight: 700;
 }
-.overlay {
+.overlay .deletion{
 	position: absolute;
 	height: 100%;
 	width: 100%	;

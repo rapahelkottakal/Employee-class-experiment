@@ -17,6 +17,8 @@ class Emp {
 			$dob= $('<h3/>').text(this.dob),
 			$customBtn = $('<button/>', { class: 'custom-btn btn btn-default' }).text('Btn'),
 
+			$delBtn = $('<button/>', { class: 'custom-btn btn btn-default' }).text('Btn2'),
+
 			$overlay = $('<div/>', { class: 'overlay' });
 
 		this.overlay = $overlay.click(()=> {
@@ -27,8 +29,18 @@ class Emp {
 		$customBtn.click(() => {
 			this.closeOverlay();
 		});
+console.log($delBtn);
+	$delBtn.click(() => {
+			this.delDeletion();
+		});
 
-		this.elem = $wrapper.append([$img, $id, $name, $desig, $dob, $overlay, $customBtn]);
+		// this.deletion = $deletion.click(()=> {
+		// 	this.delDeletion();
+
+		// });
+
+
+		this.elem = $wrapper.append([$img, $id, $name, $desig, $dob, $overlay, $customBtn, $delBtn]);
 	}
 	openOverlay() {
 		this.overlay.fadeOut();
@@ -36,8 +48,18 @@ class Emp {
 	closeOverlay() {
 		this.overlay.fadeIn();
 	}
+
+	delDeletion(){
+	
+    this.elem.hide();
+
+	console.log(this);
+	}
+
 	sayHi() {
 		console.log(`Hello, my name is ${this.name}`);
 	}
+
+
 
 }
