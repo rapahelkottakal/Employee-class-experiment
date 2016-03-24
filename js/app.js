@@ -20,7 +20,19 @@ jagu = new Publisher({
 	desig: 'tecis',
 	dp: 'http://www.endlessicons.com/wp-content/uploads/2012/12/male-avatar-icon-614x460.png',
 	dob: '23rd November 1990'});
+sample1 = new Publisher({
+	id: 3,
+	name: 'sample1',
+	desig: 'tecis',
+	dp: 'http://www.endlessicons.com/wp-content/uploads/2012/12/male-avatar-icon-614x460.png',
+	dob: '23rd August 1991'});
+sample2 = new Publisher({
+	id: 3,
+	name: 'sample2',
+	desig: 'tecis',
+	dp: 'http://www.endlessicons.com/wp-content/uploads/2012/12/male-avatar-icon-614x460.png',
+	dob: '23rd Sepetember 1992'});
 
 
 console.log(raphael);
-$('.ece-container').append([raphael.elem, varun.elem, jagu.elem]);
+$('.ece-container').append([raphael.elem, varun.elem, jagu.elem, sample1.elem, sample2.elem]);

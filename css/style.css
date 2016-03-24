@@ -22,6 +22,36 @@ img {
 	max-width: 100%;
 }
 
+.emp  {
+	width: 99%;
+	float: left;
+	margin:1% 1%;
+	/*height: 380px;*/
+	padding:0% 1%;
+	text-align :center;
+	background-color: tomato;
+	font-weight: 700;
+}
+@media screen and (min-width: 460px) {
 .emp {
-	width: 30%;
+    width: 50%;
+    float: left;
+    height:auto;
+    /* border: 1px solid grey; */
+}
+
+@media screen and (min-width: 480px) {
+.emp {
+    width: 30%;
+    float: left;
+    height:380px;
+    /* border: 1px solid grey; */
+}
+
+@media screen and (min-width: 830px) {
+.emp {
+    width: 30%;
+    float: left;
+    height:auto;
+    /* border: 1px solid grey; */
 }

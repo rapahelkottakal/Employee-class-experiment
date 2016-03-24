@@ -9,7 +9,7 @@ class Emp {
 	}
 	render() {
 
-		var $wrapper = $('<div/>', { class: `emp ${this.id}` }),
+		var $wrapper = $('<div/>', { class: `emp col-xs-6 .col-md-4 ${this.id}` }),
 			$img = $('<img/>', { src: this.dp, alt: this.name }),
 			$id = $('<h1/>').text(this.id),
 			$name = $('<h2/>', {class: 'name'}).text(this.name),
