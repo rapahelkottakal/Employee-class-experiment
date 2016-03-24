@@ -25,3 +25,10 @@ img {
 .emp {
 	width: 30%;
 }
+form{
+	color: #000;
+	margin: 10%;
+	padding: 5% 10%;
+	border: 2px solid #000;
+	border-radius: 13px;
+}
