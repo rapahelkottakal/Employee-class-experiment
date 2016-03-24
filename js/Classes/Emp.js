@@ -18,6 +18,8 @@ class Emp {
 			$customBtn = $('<button/>', { class: 'custom-btn btn btn-default' }).text('Btn'),
 			$deleteBtn = $('<button/>', { class: 'custom-btn btn btn-default' }).text('Delete'),
 
+			// $delBtn = $('<button/>', { class: 'custom-btn btn btn-default' }).text('Btn2'),
+
 			$overlay = $('<div/>', { class: 'overlay' });
 
 		this.overlay = $overlay;
@@ -26,11 +28,21 @@ class Emp {
 			this.closeOverlay();
 		});
 
+
+		// this.deletion = $deletion.click(()=> {
+		// 	this.delDeletion();
+
+
 		$deleteBtn.click(() => {
 			this.deleteEmp();
 		});
 
 		this.elem = $wrapper.append([$img, $id, $name, $desig, $dob, $overlay, $customBtn, $deleteBtn]);
+
+		// });
+
+
+
 	}
 	openOverlay() {
 		this.overlay.fadeOut();
@@ -39,12 +51,16 @@ class Emp {
 		this.overlay.fadeIn();
 	}
 
+
 	deleteEmp() {
 		this.elem.hide();
+
 	}
 
 	sayHi() {
 		console.log(`Hello, my name is ${this.name}`);
 	}
+
+
 
 }
