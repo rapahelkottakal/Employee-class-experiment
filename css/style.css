@@ -51,11 +51,11 @@ form{
 
 @media screen and (min-width: 460px) {
 .emp {
-    width: 50%;
+    width: 48%;
     float: left;
     height:auto;
     float: left;
-    height:380px;
+   
     /* border: 1px solid grey; */
 }
 
