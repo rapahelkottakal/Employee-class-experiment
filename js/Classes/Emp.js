@@ -14,11 +14,30 @@ class Emp {
 			$id = $('<h1/>').text(this.id),
 			$name = $('<h2/>', {class: 'name'}).text(this.name),
 			$desig = $('<h2/>').text(this.desig),
-			$dob= $('<h3/>').text(this.dob);
+			$dob= $('<h3/>').text(this.dob),
+			$customBtn = $('<button/>', { class: 'custom-btn btn btn-default' }).text('Btn'),
 
-		this.elem = $wrapper.append([$img, $id, $name, $desig, $dob]);
+			$overlay = $('<div/>', { class: 'overlay' });
+
+		this.overlay = $overlay.click(()=> {
+			this.openOverlay();
+
+		});
+
+		$customBtn.click(() => {
+			this.closeOverlay();
+		});
+
+		this.elem = $wrapper.append([$img, $id, $name, $desig, $dob, $overlay, $customBtn]);
+	}
+	openOverlay() {
+		this.overlay.fadeOut();
+	}
+	closeOverlay() {
+		this.overlay.fadeIn();
 	}
 	sayHi() {
 		console.log(`Hello, my name is ${this.name}`);
 	}
+
 }
